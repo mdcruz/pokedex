@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="theme_custom_background">#ff81d4fa</color><style name="Theme.Custom" parent="@android:style/Theme.Material.Light">
+    <item name="android:colorAccent">@android:color/holo_blue_bright</item>
+  <item name="android:colorBackground">@color/theme_custom_background</item><item name="android:windowBackground">?android:attr/colorBackground</item><item name="android:colorButtonNormal">?android:attr/colorButtonNormal</item></style>
+</resources>
