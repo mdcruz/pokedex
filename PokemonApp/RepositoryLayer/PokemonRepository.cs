@@ -1,6 +1,6 @@
-using PokemonApp.DataAccess;
-using PokemonApp.DataLayer.Service;
-using PokemonApp.Model;
+using PokemonApp.Model.Database;
+using PokemonApp.Model.Entity;
+using PokemonApp.Model.Service;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

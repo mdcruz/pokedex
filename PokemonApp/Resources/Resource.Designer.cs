@@ -104,52 +104,127 @@ namespace PokemonApp
 			public const int pokemon_charmeleon = 2130837517;
 			
 			// aapt resource value: 0x7f02000e
-			public const int pokemon_ekans = 2130837518;
+			public const int pokemon_clefable = 2130837518;
 			
 			// aapt resource value: 0x7f02000f
-			public const int pokemon_fearow = 2130837519;
+			public const int pokemon_clefairy = 2130837519;
 			
 			// aapt resource value: 0x7f020010
-			public const int pokemon_ivysaur = 2130837520;
+			public const int pokemon_diglett = 2130837520;
 			
 			// aapt resource value: 0x7f020011
-			public const int pokemon_kakuna = 2130837521;
+			public const int pokemon_ekans = 2130837521;
 			
 			// aapt resource value: 0x7f020012
-			public const int pokemon_metapod = 2130837522;
+			public const int pokemon_fearow = 2130837522;
 			
 			// aapt resource value: 0x7f020013
-			public const int pokemon_pidgeot = 2130837523;
+			public const int pokemon_gloom = 2130837523;
 			
 			// aapt resource value: 0x7f020014
-			public const int pokemon_pidgeotto = 2130837524;
+			public const int pokemon_golbat = 2130837524;
 			
 			// aapt resource value: 0x7f020015
-			public const int pokemon_pidgey = 2130837525;
+			public const int pokemon_ivysaur = 2130837525;
 			
 			// aapt resource value: 0x7f020016
-			public const int pokemon_pikachu = 2130837526;
+			public const int pokemon_jigglypuff = 2130837526;
 			
 			// aapt resource value: 0x7f020017
-			public const int pokemon_raticate = 2130837527;
+			public const int pokemon_kakuna = 2130837527;
 			
 			// aapt resource value: 0x7f020018
-			public const int pokemon_rattata = 2130837528;
+			public const int pokemon_metapod = 2130837528;
 			
 			// aapt resource value: 0x7f020019
-			public const int pokemon_spearow = 2130837529;
+			public const int pokemon_nidoking = 2130837529;
 			
 			// aapt resource value: 0x7f02001a
-			public const int pokemon_squirtle = 2130837530;
+			public const int pokemon_nidoqueen = 2130837530;
 			
 			// aapt resource value: 0x7f02001b
-			public const int pokemon_venusaur = 2130837531;
+			public const int pokemon_nidoran_female = 2130837531;
 			
 			// aapt resource value: 0x7f02001c
-			public const int pokemon_wartortle = 2130837532;
+			public const int pokemon_nidoran_male = 2130837532;
 			
 			// aapt resource value: 0x7f02001d
-			public const int pokemon_weedle = 2130837533;
+			public const int pokemon_nidorina = 2130837533;
+			
+			// aapt resource value: 0x7f02001e
+			public const int pokemon_nidorino = 2130837534;
+			
+			// aapt resource value: 0x7f02001f
+			public const int pokemon_ninetales = 2130837535;
+			
+			// aapt resource value: 0x7f020020
+			public const int pokemon_oddish = 2130837536;
+			
+			// aapt resource value: 0x7f020021
+			public const int pokemon_paras = 2130837537;
+			
+			// aapt resource value: 0x7f020022
+			public const int pokemon_parasect = 2130837538;
+			
+			// aapt resource value: 0x7f020023
+			public const int pokemon_pidgeot = 2130837539;
+			
+			// aapt resource value: 0x7f020024
+			public const int pokemon_pidgeotto = 2130837540;
+			
+			// aapt resource value: 0x7f020025
+			public const int pokemon_pidgey = 2130837541;
+			
+			// aapt resource value: 0x7f020026
+			public const int pokemon_pikachu = 2130837542;
+			
+			// aapt resource value: 0x7f020027
+			public const int pokemon_raichu = 2130837543;
+			
+			// aapt resource value: 0x7f020028
+			public const int pokemon_raticate = 2130837544;
+			
+			// aapt resource value: 0x7f020029
+			public const int pokemon_rattata = 2130837545;
+			
+			// aapt resource value: 0x7f02002a
+			public const int pokemon_sandshrew = 2130837546;
+			
+			// aapt resource value: 0x7f02002b
+			public const int pokemon_sandslash = 2130837547;
+			
+			// aapt resource value: 0x7f02002c
+			public const int pokemon_spearow = 2130837548;
+			
+			// aapt resource value: 0x7f02002d
+			public const int pokemon_squirtle = 2130837549;
+			
+			// aapt resource value: 0x7f02002e
+			public const int pokemon_venomoth = 2130837550;
+			
+			// aapt resource value: 0x7f02002f
+			public const int pokemon_venonat = 2130837551;
+			
+			// aapt resource value: 0x7f020030
+			public const int pokemon_venusaur = 2130837552;
+			
+			// aapt resource value: 0x7f020031
+			public const int pokemon_vileplume = 2130837553;
+			
+			// aapt resource value: 0x7f020032
+			public const int pokemon_vulpix = 2130837554;
+			
+			// aapt resource value: 0x7f020033
+			public const int pokemon_wartortle = 2130837555;
+			
+			// aapt resource value: 0x7f020034
+			public const int pokemon_weedle = 2130837556;
+			
+			// aapt resource value: 0x7f020035
+			public const int pokemon_wigglytuff = 2130837557;
+			
+			// aapt resource value: 0x7f020036
+			public const int pokemon_zubat = 2130837558;
 			
 			static Drawable()
 			{
@@ -164,131 +239,110 @@ namespace PokemonApp
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f070022
-			public const int arrow = 2131165218;
-			
-			// aapt resource value: 0x7f070027
-			public const int create = 2131165223;
+			// aapt resource value: 0x7f07001e
+			public const int arrow = 2131165214;
 			
 			// aapt resource value: 0x7f070001
 			public const int gridview = 2131165185;
 			
-			// aapt resource value: 0x7f070004
-			public const int login = 2131165188;
-			
-			// aapt resource value: 0x7f070003
-			public const int password = 2131165187;
-			
-			// aapt resource value: 0x7f070028
-			public const int pokemonIcon = 2131165224;
-			
-			// aapt resource value: 0x7f070029
-			public const int pokemonName = 2131165225;
-			
-			// aapt resource value: 0x7f070017
-			public const int pokemon_ability = 2131165207;
-			
-			// aapt resource value: 0x7f070016
-			public const int pokemon_ability_label = 2131165206;
-			
-			// aapt resource value: 0x7f07000c
-			public const int pokemon_attack = 2131165196;
-			
-			// aapt resource value: 0x7f07000b
-			public const int pokemon_attack_label = 2131165195;
-			
-			// aapt resource value: 0x7f070019
-			public const int pokemon_catch_rate = 2131165209;
-			
-			// aapt resource value: 0x7f070018
-			public const int pokemon_catch_rate_label = 2131165208;
-			
-			// aapt resource value: 0x7f070010
-			public const int pokemon_defense = 2131165200;
-			
-			// aapt resource value: 0x7f07000f
-			public const int pokemon_defense_label = 2131165199;
-			
-			// aapt resource value: 0x7f070015
-			public const int pokemon_egg_type = 2131165205;
-			
-			// aapt resource value: 0x7f070014
-			public const int pokemon_egg_type_label = 2131165204;
-			
-			// aapt resource value: 0x7f070020
-			public const int pokemon_evolution = 2131165216;
-			
 			// aapt resource value: 0x7f070021
-			public const int pokemon_evolution_description = 2131165217;
+			public const int pokemonIcon = 2131165217;
 			
-			// aapt resource value: 0x7f070023
-			public const int pokemon_evolution_image = 2131165219;
-			
-			// aapt resource value: 0x7f070024
-			public const int pokemon_evolution_image_to = 2131165220;
-			
-			// aapt resource value: 0x7f07001f
-			public const int pokemon_happiness = 2131165215;
-			
-			// aapt resource value: 0x7f07001e
-			public const int pokemon_happiness_label = 2131165214;
-			
-			// aapt resource value: 0x7f07001b
-			public const int pokemon_height = 2131165211;
-			
-			// aapt resource value: 0x7f07001a
-			public const int pokemon_height_label = 2131165210;
-			
-			// aapt resource value: 0x7f07000a
-			public const int pokemon_hp = 2131165194;
-			
-			// aapt resource value: 0x7f070009
-			public const int pokemon_hp_label = 2131165193;
-			
-			// aapt resource value: 0x7f070007
-			public const int pokemon_item_id = 2131165191;
-			
-			// aapt resource value: 0x7f070008
-			public const int pokemon_item_image = 2131165192;
-			
-			// aapt resource value: 0x7f070006
-			public const int pokemon_item_name = 2131165190;
-			
-			// aapt resource value: 0x7f070011
-			public const int pokemon_profile = 2131165201;
-			
-			// aapt resource value: 0x7f07000e
-			public const int pokemon_speed = 2131165198;
-			
-			// aapt resource value: 0x7f07000d
-			public const int pokemon_speed_label = 2131165197;
+			// aapt resource value: 0x7f070022
+			public const int pokemonName = 2131165218;
 			
 			// aapt resource value: 0x7f070013
-			public const int pokemon_type = 2131165203;
+			public const int pokemon_ability = 2131165203;
 			
 			// aapt resource value: 0x7f070012
-			public const int pokemon_type_label = 2131165202;
+			public const int pokemon_ability_label = 2131165202;
 			
-			// aapt resource value: 0x7f07001d
-			public const int pokemon_weight = 2131165213;
+			// aapt resource value: 0x7f070008
+			public const int pokemon_attack = 2131165192;
+			
+			// aapt resource value: 0x7f070007
+			public const int pokemon_attack_label = 2131165191;
+			
+			// aapt resource value: 0x7f070015
+			public const int pokemon_catch_rate = 2131165205;
+			
+			// aapt resource value: 0x7f070014
+			public const int pokemon_catch_rate_label = 2131165204;
+			
+			// aapt resource value: 0x7f07000c
+			public const int pokemon_defense = 2131165196;
+			
+			// aapt resource value: 0x7f07000b
+			public const int pokemon_defense_label = 2131165195;
+			
+			// aapt resource value: 0x7f070011
+			public const int pokemon_egg_type = 2131165201;
+			
+			// aapt resource value: 0x7f070010
+			public const int pokemon_egg_type_label = 2131165200;
 			
 			// aapt resource value: 0x7f07001c
-			public const int pokemon_weight_label = 2131165212;
+			public const int pokemon_evolution = 2131165212;
+			
+			// aapt resource value: 0x7f07001d
+			public const int pokemon_evolution_description = 2131165213;
+			
+			// aapt resource value: 0x7f07001f
+			public const int pokemon_evolution_image = 2131165215;
+			
+			// aapt resource value: 0x7f070020
+			public const int pokemon_evolution_image_to = 2131165216;
+			
+			// aapt resource value: 0x7f07001b
+			public const int pokemon_happiness = 2131165211;
+			
+			// aapt resource value: 0x7f07001a
+			public const int pokemon_happiness_label = 2131165210;
+			
+			// aapt resource value: 0x7f070017
+			public const int pokemon_height = 2131165207;
+			
+			// aapt resource value: 0x7f070016
+			public const int pokemon_height_label = 2131165206;
+			
+			// aapt resource value: 0x7f070006
+			public const int pokemon_hp = 2131165190;
 			
 			// aapt resource value: 0x7f070005
-			public const int register = 2131165189;
+			public const int pokemon_hp_label = 2131165189;
 			
-			// aapt resource value: 0x7f070026
-			public const int registerPassword = 2131165222;
+			// aapt resource value: 0x7f070003
+			public const int pokemon_item_id = 2131165187;
 			
-			// aapt resource value: 0x7f070025
-			public const int registerUsername = 2131165221;
+			// aapt resource value: 0x7f070004
+			public const int pokemon_item_image = 2131165188;
+			
+			// aapt resource value: 0x7f070002
+			public const int pokemon_item_name = 2131165186;
+			
+			// aapt resource value: 0x7f07000d
+			public const int pokemon_profile = 2131165197;
+			
+			// aapt resource value: 0x7f07000a
+			public const int pokemon_speed = 2131165194;
+			
+			// aapt resource value: 0x7f070009
+			public const int pokemon_speed_label = 2131165193;
+			
+			// aapt resource value: 0x7f07000f
+			public const int pokemon_type = 2131165199;
+			
+			// aapt resource value: 0x7f07000e
+			public const int pokemon_type_label = 2131165198;
+			
+			// aapt resource value: 0x7f070019
+			public const int pokemon_weight = 2131165209;
+			
+			// aapt resource value: 0x7f070018
+			public const int pokemon_weight_label = 2131165208;
 			
 			// aapt resource value: 0x7f070000
 			public const int searchview = 2131165184;
-			
-			// aapt resource value: 0x7f070002
-			public const int userName = 2131165186;
 			
 			static Id()
 			{
@@ -310,16 +364,10 @@ namespace PokemonApp
 			public const int HomeScreenLayout = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int LoginLayout = 2130903042;
+			public const int PokemonDetailsLayout = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int PokemonDetailsLayout = 2130903043;
-			
-			// aapt resource value: 0x7f030004
-			public const int RegisterLayout = 2130903044;
-			
-			// aapt resource value: 0x7f030005
-			public const int ViewPokemonLayout = 2130903045;
+			public const int ViewPokemonLayout = 2130903043;
 			
 			static Layout()
 			{
@@ -334,26 +382,11 @@ namespace PokemonApp
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040002
-			public const int ApplicationName = 2130968578;
-			
-			// aapt resource value: 0x7f040006
-			public const int CreateAccountFailedMessage = 2130968582;
-			
-			// aapt resource value: 0x7f040005
-			public const int CreateAccountSuccessMessage = 2130968581;
-			
 			// aapt resource value: 0x7f040001
-			public const int Hello = 2130968577;
+			public const int LoadingMessage = 2130968577;
 			
-			// aapt resource value: 0x7f040007
-			public const int LoadingMessage = 2130968583;
-			
-			// aapt resource value: 0x7f040004
-			public const int LoginFailedMessage = 2130968580;
-			
-			// aapt resource value: 0x7f040003
-			public const int LoginSuccessMessage = 2130968579;
+			// aapt resource value: 0x7f040002
+			public const int ProgressHeaderMessage = 2130968578;
 			
 			// aapt resource value: 0x7f040000
 			public const int library_name = 2130968576;

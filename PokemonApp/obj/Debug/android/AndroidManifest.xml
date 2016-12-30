@@ -6,14 +6,14 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <application android:label="PokemonApp" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
-    <activity android:label="ViewPokemonScreen" android:name="md5d5a10d14eb902c39e69227dae17c7d79.PokemonDetailsScreen" />
-    <activity android:icon="@drawable/icon_pikachu" android:label="Pokedex" android:name="md5d5a10d14eb902c39e69227dae17c7d79.HomeScreen">
+    <activity android:label="ViewPokemonScreen" android:name="md5d5a10d14eb902c39e69227dae17c7d79.PokemonDetailsActivity" />
+    <activity android:icon="@drawable/icon_pikachu" android:label="Pokedex" android:name="md5d5a10d14eb902c39e69227dae17c7d79.HomeActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:label="Pokedex" android:name="md5d5a10d14eb902c39e69227dae17c7d79.ViewPokemonScreen" />
+    <activity android:label="Pokedex" android:name="md5d5a10d14eb902c39e69227dae17c7d79.ViewPokemonActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="PokemonApp.PokemonApp.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">
