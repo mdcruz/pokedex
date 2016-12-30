@@ -70,7 +70,6 @@ namespace PokemonApp.Activities
             intent.PutExtra("pokemonHp", selectedPokemon.hp);
             intent.PutExtra("pokemonAttack", selectedPokemon.attack);
             intent.PutExtra("pokemonSpeed", selectedPokemon.speed);
-            intent.PutExtra("pokemonSpAttack", selectedPokemon.sp_atk);
             intent.PutExtra("pokemonWeight", selectedPokemon.weight);
             intent.PutExtra("pokemonHeight", selectedPokemon.height);
             intent.PutStringArrayListExtra("pokemonType", selectedPokemon.types.Select(x => x.name).ToList());
@@ -78,7 +77,6 @@ namespace PokemonApp.Activities
             intent.PutStringArrayListExtra("pokemonAbility", selectedPokemon.abilities.Select(x => x.name).ToList());
             intent.PutExtra("pokemonCatchRate", selectedPokemon.catch_rate.ToString());
             intent.PutExtra("pokemonDefense", selectedPokemon.defense);
-            intent.PutExtra("pokemonDefenseAttack", selectedPokemon.sp_def);
             intent.PutExtra("pokemonHappiness", selectedPokemon.happiness);
 
             if(selectedPokemon.evolutions.Count > 0)
