@@ -2,6 +2,7 @@ using Akavache;
 using Newtonsoft.Json;
 using PokemonApp.Model.Database;
 using PokemonApp.Model.Entity;
+using PokemonApp.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -12,21 +13,18 @@ namespace PokemonApp.Model.Service
 {
     public class PokemonService
     {
-        private const string _baseUrl = "http://pokeapi.co/api/v1/";
-        private const string _pokemonResourceUrl = "pokemon/{0}";
-        private SQLiteHelper _sqliteHelper;
         private PokemonQueries _pokemonQueries;
 
-        public PokemonService(SQLiteHelper sqliteHelper)
+        public PokemonService()
         {
-            _sqliteHelper = sqliteHelper;
-            _pokemonQueries = new PokemonQueries(_sqliteHelper);
+            _pokemonQueries = new PokemonQueries();
         }
 
         public async Task<List<Pokemon>> GetPokemons()
         {
             var pokemonModelList = new List<Pokemon>();
 
+            // LocalMachine is the local SQLite database in your application
             var cachedPokemons = BlobCache.LocalMachine.GetAndFetchLatest(
                 "Pokemons",
                 () => GetPokemonsFromService(),
@@ -55,7 +53,7 @@ namespace PokemonApp.Model.Service
             {
                 using (var client = new HttpClient())
                 {
-                    var response = await client.GetAsync(_baseUrl + string.Format(_pokemonResourceUrl, pokemon.Id));
+                    var response = await client.GetAsync(Constants.baseUrl + string.Format(Constants.pokemonResourceUrl, pokemon.Id));
 
                     if (response.IsSuccessStatusCode)
                     {
@@ -81,7 +79,7 @@ namespace PokemonApp.Model.Service
 
                 pokemonModel.evolutions[0].image_resource = !string.IsNullOrEmpty(pokemonEvolution)
                     ? pokemonEvolution
-                    : "image_not_found";
+                    : Constants.imageNotFound;
             }
         }
     }

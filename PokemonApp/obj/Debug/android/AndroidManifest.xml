@@ -13,7 +13,7 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:label="Pokedex" android:name="md5d5a10d14eb902c39e69227dae17c7d79.ViewPokemonActivity" />
+    <activity android:label="Pokedex" android:name="md5d5a10d14eb902c39e69227dae17c7d79.DisplayPokemonActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="PokemonApp.PokemonApp.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">

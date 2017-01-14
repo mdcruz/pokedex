@@ -1,14 +1,16 @@
-using Android.Content;
-using PokemonApp.Presenter.Implementation;
+using System.Collections.Generic;
 
 namespace PokemonApp.Views
 {
     public interface IDisplayPokemonView
     {
-        void NavigateToPokemonDetailsScreen(Intent intent);
+        void NavigateToPokemonDetailsScreen();
         void SetProgressDialogMessage();
         void HideProgressDialogMessage();
         void SetImageAdapter();
-        CustomImageAdapter GetImageAdapter();
+        void SetIntentValue(string intentKey, string intentValue);
+        void SetIntentValue(string intentKey, int intentValue);
+        void SetIntentValue(string intentKey, IList<string> intentValue);
+        void SetIntent();
     }
 }

@@ -113,30 +113,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Presenter\Implementation\CustomImageAdapter.cs" />
+    <Compile Include="AndroidExtensions\CustomImageAdapter.cs" />
     <Compile Include="Activities\Implementation\PokemonDetailsActivity.cs" />
     <Compile Include="AkavacheSqliteLinkerOverride.cs" />
-    <Compile Include="Extensions\SearchFilter.cs" />
+    <Compile Include="AndroidExtensions\SearchFilter.cs" />
     <Compile Include="Model\Database\PokemonQueries.cs" />
     <Compile Include="Model\Service\PokemonService.cs" />
     <Compile Include="Model\Database\PokemonTable.cs" />
-    <Compile Include="Extensions\JavaHolder.cs" />
-    <Compile Include="Extensions\ObjectExtensions.cs" />
+    <Compile Include="Utilities\Constants.cs" />
+    <Compile Include="Utilities\JavaHolder.cs" />
+    <Compile Include="Utilities\ObjectExtensions.cs" />
     <Compile Include="Model\Entity\Pokemon.cs" />
     <Compile Include="Presenter\Implementation\HomePresenter.cs" />
     <Compile Include="Presenter\Implementation\PokemonDetailsPresenter.cs" />
-    <Compile Include="Presenter\Implementation\ViewPokemonPresenter.cs" />
+    <Compile Include="Presenter\Implementation\DisplayPokemonPresenter.cs" />
     <Compile Include="Presenter\Interface\IHomePresenter.cs" />
     <Compile Include="Presenter\Interface\IPokemonDetailsPresenter.cs" />
-    <Compile Include="Presenter\Interface\IViewPokemonPresenter.cs" />
+    <Compile Include="Presenter\Interface\IDisplayPokemonPresenter.cs" />
     <Compile Include="Activities\Implementation\HomeActivity.cs" />
-    <Compile Include="Model\Database\SQLiteHelper.cs" />
+    <Compile Include="AndroidExtensions\SQLiteHelper.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Activities\Implementation\ViewPokemonActivity.cs" />
+    <Compile Include="Activities\Implementation\DisplayPokemonActivity.cs" />
     <Compile Include="Activities\Interface\IDisplayPokemonView.cs" />
     <Compile Include="Activities\Interface\IHomeView.cs" />
     <Compile Include="Activities\Interface\IPokemonDetailsView.cs" />
+    <Compile Include="Utilities\StringExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\PokemonDB.sqlite" />

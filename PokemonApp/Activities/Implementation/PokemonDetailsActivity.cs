@@ -1,9 +1,9 @@
-
 using Android.App;
 using Android.OS;
 using Android.Widget;
 using PokemonApp.Presenter.Implementation;
 using PokemonApp.Presenter.Interface;
+using PokemonApp.Utilities;
 using PokemonApp.Views;
 
 namespace PokemonApp.Activities
@@ -41,43 +41,63 @@ namespace PokemonApp.Activities
             SetContentView(Resource.Layout.PokemonDetailsLayout);
             InitialiseControls();
 
-            _pokemonDetailsPresenter = new PokemonDetailsPresenter(this, Intent);
-            _pokemonDetailsPresenter.OnPokemonItemClick();
+            _pokemonDetailsPresenter = new PokemonDetailsPresenter(this);
+            _pokemonDetailsPresenter.ClickPokemon();
         }
 
         #region Override methods from IPokemonDetailsView
 
         public void SetPokemonMainDetails()
         {
-            PokemonItemName.Text = _pokemonDetailsPresenter.GetPokemonName();
-            PokemonId.Text = _pokemonDetailsPresenter.GetPokemonId();
-            PokemonItemImage.SetImageResource(_pokemonDetailsPresenter.GetPokemonImageResource("pokemonIcon"));
+            PokemonItemName.Text = GetPokemonName();
+            PokemonId.Text = $"#{Intent.GetStringExtra(Constants.pokemonId)}";
+            PokemonItemImage.SetImageResource(GetPokemonImageResource(Constants.pokemonIcon));
         }
 
         public void SetPokemonStats()
         {
-            PokemonHp.Progress = _pokemonDetailsPresenter.GetPokemonHp();
-            PokemonAttack.Progress = _pokemonDetailsPresenter.GetPokemonAttack();
-            PokemonSpeed.Progress = _pokemonDetailsPresenter.GetPokemonSpeed();
-            PokemonDefense.Progress = _pokemonDetailsPresenter.GetPokemonDefense();
+            PokemonHp.Progress = Intent.GetIntExtra(Constants.pokemonHp, 0);
+            PokemonAttack.Progress = Intent.GetIntExtra(Constants.pokemonAttack, 0);
+            PokemonSpeed.Progress = Intent.GetIntExtra(Constants.pokemonSpeed, 0);
+            PokemonDefense.Progress = Intent.GetIntExtra(Constants.pokemonDefense, 0);
         }
 
         public void SetPokemonProfile()
         {
-            PokemonHeight.Text = _pokemonDetailsPresenter.GetPokemonHeight();
-            PokemonWeight.Text = _pokemonDetailsPresenter.GetPokemonWeight();
-            PokemonType.Text = _pokemonDetailsPresenter.GetPokemonType();
-            PokemonEggType.Text = _pokemonDetailsPresenter.GetPokemonEggGroup();
-            PokemonAbility.Text = _pokemonDetailsPresenter.GetPokemonAbilities();
-            PokemonCatchRate.Text = _pokemonDetailsPresenter.GetPokemonCatchRate();
-            PokemonHappiness.Text = _pokemonDetailsPresenter.GetPokemonHappiness();
+            PokemonHeight.Text = $"{Intent.GetStringExtra(Constants.pokemonHeight)} m";
+            PokemonWeight.Text = $"{Intent.GetStringExtra(Constants.pokemonWeight)} kg";
+            PokemonType.Text = Intent.GetStringArrayListExtra(Constants.pokemonType).JoinList().ToLower().ToTitleCase();
+            PokemonEggType.Text = Intent.GetStringArrayListExtra(Constants.pokemonEggType).JoinList();
+            PokemonAbility.Text = Intent.GetStringArrayListExtra(Constants.pokemonAbility).JoinList().ToLower().ToTitleCase();
+            PokemonCatchRate.Text = $"{Intent.GetStringExtra(Constants.pokemonCatchRate)}%";
+            PokemonHappiness.Text = Intent.GetStringExtra(Constants.pokemonHappiness);
         }
 
         public void SetPokemonEvolution()
         {
-            EvolutionTextView.Text = _pokemonDetailsPresenter.GetPokemonEvolution();
-            PokemonEvolutionIcon.SetImageResource(_pokemonDetailsPresenter.GetPokemonImageResource("pokemonIcon"));
-            PokemonEvolutionIconTo.SetImageResource(_pokemonDetailsPresenter.GetPokemonImageResource("pokemonEvolutionToIcon"));
+            EvolutionTextView.Text = GetPokemonEvolution();
+            PokemonEvolutionIcon.SetImageResource(GetPokemonImageResource(Constants.pokemonIcon));
+            PokemonEvolutionIconTo.SetImageResource(GetPokemonImageResource(Constants.pokemonEvolutionToIcon));
+        }
+
+        public int GetPokemonImageResource(string intentKey)
+        {
+            var intentValue = Intent.GetStringExtra(intentKey);
+            return (int)typeof(Resource.Drawable).GetField(intentValue).GetValue(null);
+        }
+
+        public string GetPokemonEvolution()
+        {
+            var evolutionDesc = Intent.GetStringExtra(Constants.pokemonEvolutionTo) != null
+                ? $"{GetPokemonName()} evolves to {Intent.GetStringExtra(Constants.pokemonEvolutionTo)} at level {Intent.GetStringExtra(Constants.pokemonEvolutionLevel)}"
+                : $"{GetPokemonName()} has no evolution";
+
+            return evolutionDesc;
+        }
+
+        public string GetPokemonName()
+        {
+            return Intent.GetStringExtra(Constants.pokemonName);
         }
 
         #endregion

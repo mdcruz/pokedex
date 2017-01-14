@@ -132,5 +132,5 @@ C:\Users\MCruz\Documents\Visual Studio 2015\Projects\PokemonApp\PokemonApp\obj\D
 C:\Users\MCruz\Documents\Visual Studio 2015\Projects\PokemonApp\PokemonApp\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 C:\Users\MCruz\Documents\Visual Studio 2015\Projects\PokemonApp\PokemonApp\obj\Debug\res\drawable\pokemon_nidoran_female.png
 C:\Users\MCruz\Documents\Visual Studio 2015\Projects\PokemonApp\PokemonApp\obj\Debug\res\drawable\pokemon_nidoran_male.png
-C:\Users\MCruz\Documents\Visual Studio 2015\Projects\PokemonApp\PokemonApp\obj\Debug\PokemonApp.dll.mdb
-C:\Users\MCruz\Documents\Visual Studio 2015\Projects\PokemonApp\PokemonApp\bin\Debug\PokemonApp.dll.mdb
+C:\Users\MCruz\documents\visual studio 2015\Projects\PokemonApp\PokemonApp\obj\Debug\PokemonApp.dll.mdb
+C:\Users\MCruz\documents\visual studio 2015\Projects\PokemonApp\PokemonApp\bin\Debug\PokemonApp.dll.mdb

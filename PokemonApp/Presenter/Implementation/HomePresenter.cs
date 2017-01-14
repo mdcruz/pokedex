@@ -1,5 +1,4 @@
-using Android.Content;
-using PokemonApp.Model.Database;
+using PokemonApp.AndroidExtensions;
 using PokemonApp.Presenter.Interface;
 using PokemonApp.Views;
 using System.Timers;
@@ -12,10 +11,10 @@ namespace PokemonApp.Presenter.Implementation
         private Timer _timer;
         private SQLiteHelper _sqLiteHelper;
 
-        public HomePresenter(IHomeView homeView, Context context)
+        public HomePresenter(IHomeView homeView, SQLiteHelper sqliteHelper)
         {
             _homeView = homeView;
-            _sqLiteHelper = new SQLiteHelper(context);
+            _sqLiteHelper = sqliteHelper;
         }
 
         public void InitialiseDb()
@@ -23,7 +22,7 @@ namespace PokemonApp.Presenter.Implementation
             _sqLiteHelper.CreateDatabase();
         }
 
-        public void OnStart()
+        public void StartApplication()
         {
             _timer = new Timer();
             _timer.Interval = 500;

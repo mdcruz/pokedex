@@ -1,5 +1,7 @@
+using PokemonApp.Utilities;
 using SQLite;
 using System.Collections.Generic;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace PokemonApp.Model.Database
@@ -7,13 +9,12 @@ namespace PokemonApp.Model.Database
     public class PokemonQueries
     {
         private SQLiteAsyncConnection _sqliteConnection;
-        private SQLiteHelper _sqliteHelper;
 
-        public PokemonQueries(SQLiteHelper sqliteHelper)
+        public PokemonQueries()
         {
-            _sqliteHelper = sqliteHelper;
-            _sqliteConnection = new SQLiteAsyncConnection(_sqliteHelper.GetDbPath());
+            var dbPath = Path.Combine(Constants.DB_DIRECTORY, Constants.DB_FILENAME);
 
+            _sqliteConnection = new SQLiteAsyncConnection(dbPath);
             _sqliteConnection.CreateTableAsync<PokemonTable>();
         }
 

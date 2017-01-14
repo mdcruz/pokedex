@@ -6,5 +6,8 @@ namespace PokemonApp.Views
         void SetPokemonStats();
         void SetPokemonProfile();
         void SetPokemonEvolution();
+        string GetPokemonName();
+        int GetPokemonImageResource(string key);
+        string GetPokemonEvolution();
     }
 }
